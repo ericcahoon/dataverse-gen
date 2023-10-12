@@ -148,6 +148,9 @@ export class SchemaModel {
       entityType.SchemaName = entityMetadata.SchemaName;
       entityType.EntitySetName = entityMetadata.EntitySetName;
 
+      entityType.PrimaryIdAttribute = entityMetadata.PrimaryIdAttribute;
+      entityType.PrimaryNameAttribute = entityMetadata.PrimaryNameAttribute;
+
       // Re-add the properties with all the information required (not in the emdx)
       entityType.Properties = [];
       if (!entityMetadata.Attributes) continue;

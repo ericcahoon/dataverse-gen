@@ -33,7 +33,8 @@ export const <%- Name %>Metadata = {
   typeName: "mscrm.<%- Name %>",
   logicalName: "<%- Name %>",
   collectionName: "<%- EntitySetName %>",
-  primaryIdAttribute: "<%- KeyName %>",
+  primaryIdAttribute: "<%- PrimaryIdAttribute %>",
+  primaryNameAttribute: "<%- PrimaryNameAttribute %>",
   attributeTypes: {
     // Numeric Types
     <%_ Properties.filter(p=>p.TypescriptType.name=="number").forEach(function(attribute){ _%>
