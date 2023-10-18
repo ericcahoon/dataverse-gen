@@ -65,7 +65,7 @@ export class DataverseMetadataService implements MetadataService {
           FilterOperator: LogicalOperator.And,
         },
         Properties: {
-          PropertyNames: ["Attributes", "SchemaName", "EntitySetName"],
+          PropertyNames: ["Attributes", "SchemaName", "EntitySetName", "PrimaryIdAttribute", "PrimaryNameAttribute"],
         },
         AttributeQuery: {
           Properties: {

@@ -45,6 +45,8 @@ export interface EntityType extends EdmxBase {
   BaseType: string;
   Abstract?: boolean;
   KeyName?: string;
+  PrimaryIdAttribute?: string;
+  PrimaryNameAttribute?: string;
   Key: Array<{
     PropertyRef: {
       Name: string;
